@@ -18,7 +18,6 @@
       <h3>目录</h3>
       <ul class="relyOn-directory-ul">
         <li type="creat">创建项目</li>
-        <li type="ideaSet">配置Idea</li>
         <li type="mavenSet">配置Maven</li>
       </ul>
     </div>
@@ -26,19 +25,83 @@
       <div id="creat">
         <h3>创建项目</h3>
         <div class="detail_content">
+          <h3 id="createPro">新建项目</h3>
           <p>打开Idea 选择 Create New Project</p>
           <img src="../../assets/img/creat/c-1.png" class="common-img">
-          <P>我们要创建一个springBoot项目,需要安装插件，所以我们先创建一个空项目,点击 【next】</P>
+          <P>我们要创建一个springBoot项目，需要安装插件，所以我们先创建一个空项目，点击 【next】</P>
           <img src="../../assets/img/creat/c-2.png" class="common-img">
           <p>输入我们的项目名称，和选择项目存放位置 点击【finish】</p>
           <img src="../../assets/img/creat/c-3.png" class="common-img">
           <p>我们先不用管这些，点击 【cancel】</p>
           <img src="../../assets/img/creat/c-4.png" class="common-img">
-
+          <p>空项目打开后，如图，我们的目的是安装spring boot的插件，用插件来创建项目</p>
+          <P>点击 file -> Settings</P>
+          <img src="../../assets/img/creat/c-5.png" class="common-img">
+          <P>选择 Plugins -> Marketplace -> 输入 spring assistant -> 点击 【install】</P>
+          <img src="../../assets/img/creat/c-6.png" class="common-img">
+          <p>点击 【RestartIDE】 会重新打开IDE</p>
+          <img src="../../assets/img/creat/c-7.png" class="common-img">
+          <P>我们点击 【cancel】取消，再创建新项目</P>
+          <img src="../../assets/img/creat/c-8.png" class="common-img">
+          <p>这时候会看到左边 多了一个 Spring Assistant 插件，Project JDK 选择我们之前安装的java路径，选择默认 Default。点击【next】</p>
+          <img src="../../assets/img/creat/c-9.png" class="common-img">
+          <p>我们先不管这里点击【next】</p>
+          <img src="../../assets/img/creat/c-10.png" class="common-img">
+          <p>选择Web -> Spring Web(这里还有最新的Reactive Web，之前自己在研究了，我们选择Web) -> 还可以选择 SpringBoot的版本(我们用默认的2.2.1，也可能大家的不一样)，点击【next】</p>
+          <img src="../../assets/img/creat/c-11.png" class="common-img">
+          <p>这里可以输入项目名称，可以修改项目存放在本地的位置。点击【finish】。(完事后会自动下载SpringBoot的一些依赖，等待就行了)这里新项目已经是创建好了</p>
+          <img src="../../assets/img/creat/c-12.png" class="common-img">
         </div>
       </div>
-      <div id="ideaSet"></div>
-      <div id="mavenSet"></div>
+      <div id="mavenSet"> 
+        <h3>配置Maven</h3>
+        <div class="detail_content">
+            <p>点击 file -> setting</p>
+            <img src="../../assets/img/creat/c-13.png" class="common-img">
+            <p>点击 Build,Execution,Deployment -> Build Tools -> Maven</p>
+            <p>Maven Home directory -> 配置成之前咱们安装的 本地Maven目录</p>
+            <p>Use setting file -> 配置成之前咱们安装的 本地Maven目录下/conf/setting.xml (因为我们之前把 淘宝的maven地址放进去了，加速我们下载一些依赖包)</p>
+            <p>Local repository -> 本地新建一个maven仓库目录(下载的依赖都会在里面)</p>
+            <img src="../../assets/img/creat/c-14.png" class="common-img">
+            <p>查看一下使用的是否是同一个JDK</p>
+            <img src="../../assets/img/creat/c-15.png" class="common-img">
+            <p>查看一下使用的是否是同一个JDK</p>
+            <p>点击OK</p>
+            <img src="../../assets/img/creat/c-16.png" class="common-img">
+            <p>会根据修改的配置重新下载依赖</p>
+            <img src="../../assets/img/creat/c-17.png" class="common-img">
+            <p>右侧有一个 maven 工具栏。(我们会经常用到)，左下方就是正在下载的依赖</p>
+            <img src="../../assets/img/creat/c-18.png" class="common-img">
+            <img src="../../assets/img/creat/c-19.png" class="common-img">
+            <img src="../../assets/img/creat/c-20.png" class="common-img">
+            <p>下载完成后是这个样子，(有时候可能会因为网络原因，一些依赖下不下来。这个时候我们点击右侧maven工具栏有一个刷新的按钮，重新下载一下)</p>
+            <img src="../../assets/img/creat/c-21.png" class="common-img">
+            <h3>启动项目 (建议使用配置方式启动)</h3>
+            <p>这就是简单的项目结构</p>
+            <p>src -> main -> 主文件</p>
+            <p>pom.xml -> 是这个项目里面 依赖的包</p>
+            <img src="../../assets/img/creat/c-22.png" class="common-img">
+            <p>我们可以通过点击 DemoApplication 左侧的 启动箭头进行项目启动</p>
+            <img src="../../assets/img/creat/c-23.png" class="common-img">
+            <img src="../../assets/img/creat/c-24.png" class="common-img">
+            <p>当然我们也可以通过配置方式启动</p>
+            <img src="../../assets/img/creat/c-25.png" class="common-img">
+            <img src="../../assets/img/creat/c-26.png" class="common-img">
+            <img src="../../assets/img/creat/c-27.png" class="common-img">
+            <img src="../../assets/img/creat/c-28.png" class="common-img">
+            <img src="../../assets/img/creat/c-29.png" class="common-img">
+            <img src="../../assets/img/creat/c-30.png" class="common-img">
+            <p>项目已经启动啦</p>
+            <img src="../../assets/img/creat/c-31.png" class="common-img">
+        </div>
+      </div>
+      <div class="remark">
+        <h3>还会做什么？</h3>
+        <span>1.介绍 如何实现一个简单的 CRUD</span>
+        <span>2.介绍 spring Boot常用的注解</span>
+        <span>3.介绍 Mysql的安装</span>
+        <span>4.待续</span>
+      </div>
     </div>
   </div>
 </body>
