@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../assets/common.css" type="text/css" />
+  <link rel="stylesheet" href="index.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/jq3.4.1.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>下载依赖项</h1>
+    <span>
+      <a href="../../index.html">返回首页</a>
+    </span>
+    <div class="down-directory">
+      <h3>目录</h3>
+      <ul class="down-directory-ul">
+        <li type="java">java下载</li>
+        <li type="idea">idea下载</li>
+        <li type="maven">maven下载</li>
+      </ul>
+    </div>
+    <div class="content">
+      <div id="java">
+        <h3>Java下载</h3>
+        <div class="text">
+          <div class="text-title-down">
+            <div class="left_content">
+              <h4>去java官网下载JDK1.8 因为目前市面上1.8用的比较多，你也可以下载新版本 </h4>
+              <span class="span-div"><a
+                  href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">官网下载连接</a></span>
+            </div>
+            <div class="right_content">
+              <img src="../../assets/img/java/jd-1.png" width="100%" height="100%">
+            </div>
+          </div>
+          <div class="detail_content">
+            <div class="text-title">
+              <h4>配置JAVA环境变量</h4>
+            </div>
+            <span class="span-div">1).打开我的电脑,右键属性</span>
+            <img src="../../assets/img/java/jd-2.png" class="common-img">
+            <p>选择【系统变量】点击【新建】</p>
+            <p>变量名--- JAVA_HOME</p>
+            <p>变量值--- 安装JDK的位置</p>
+            <img src="../../assets/img/java/jd-3.png" class="common-img-small">
+            <p>点击 【确定】</p>
+            <p>继续点击 【新建】</p>
+            <p>变量名--- CLASSPATH</p>
+            <p>变量值--- .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar 【注意前面那个 . 】</p>
+            <img src="../../assets/img/java/jd-5.png" class="common-img">
+            <p>点击 【确定】</p>
+            <p>选择 【系统变量】里的“path”变量 新建变量--- %JAVA_HOME%\bin (可能大家打开不一样)</p>
+            <img src="../../assets/img/java/jd-6.png" class="common-img-small">
+            <img src="../../assets/img/java/jd-7.png" class="common-img">
+            <p>打开控制台 输入 【java -version】回车 会显示JAVA版本表示成功</p>
+            <img src="../../assets/img/java/jd-8.png" class="common-img-small">
+          </div>
+        </div>
+      </div>
+      <div id="idea">
+        <h3>Idea下载</h3>
+        <div class="text">
+          <div class="text-title-down">
+            <div class="left_content">
+              <h4>去idea官网下载 --选择社区版，你也可以去别的地方下载(idea有收费和免费，我们下载社区版免费的，基本上已经满足开发需求) </h4>
+              <span class="span-div"><a href="http://www.jetbrains.com/idea/download/#section=windows">官网下载连接</a></span>
+            </div>
+            <div class="right_content">
+              <img src="../../assets/img/idea/idea-1.png" width="100%" height="100%">
+            </div>
+          </div>
+          <div class="detail_content">
+            <div class="text-title">
+              <h4>安装IDEA</h4>
+              <p>一路next</p>
+              <p>创建桌面应用选择 64-bit- launcher</p>
+              <p>选择.java .groovy .kt ,增加环境变量</p>
+              <p>继续next</p>
+              <img src="../../assets/img/idea/idea-2.png" class="common-img">
+              <p>选择安装路径</p>
+              <img src="../../assets/img/idea/idea-3.png" class="common-img">
+              <p>点击【instal】</p>
+              <img src="../../assets/img/idea/idea-4.png" class="common-img">
+              <p>instal 中请等待</p>
+              <img src="../../assets/img/idea/idea-5.png" class="common-img">
+              <p>华丽分割线</p>
+              <p>点击【finish】</p>
+              <img src="../../assets/img/idea/idea-6.png" class="common-img">
+              <p>我们是第一次使用，直接选择 Do Not import settings</p>
+              <img src="../../assets/img/idea/idea-7.png" class="common-img-small">
+              <p>华丽分割线</p>
+              <p>选择我同意条款 点击【continue】</p>
+              <img src="../../assets/img/idea/idea-8.png" class="common-img">
+              <p>到这里idea 已经彻底安装完成啦。下面是初始化一些配置项,我们选择跳过-选择默认设置(skip remaining and set defaults)</p>
+              <img src="../../assets/img/idea/idea-9.png" class="common-img">
+              <p>打开Idea,这里只介绍Idea的安装(如何使用Idea创建一个 Java Spring Boot项目请查看别的章节)</p>
+              <img src="../../assets/img/idea/idea-10.png" class="common-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="maven">
+        <h3>Maven下载</h3>
+        <div class="text">
+          <div class="text-title-down">
+            <div class="left_content">
+              <h4>去Mava官网下载,这里有很多中下载,我们选择下载压缩包</h4>
+              <span class="span-div"><a href="https://maven.apache.org/download.cgi">官网下载连接</a></span>
+            </div>
+            <div class="right_content">
+              <img src="../../assets/img/maven/ma-1.png" width="100%" height="100%">
+            </div>
+          </div>
+          <div class="detail_content">
+            <div class="text-title">
+              <p>下载后将它解压, 我们会得到一个解压包,这就是maven的东西。(把这个包放到一个地方，以后我们会用得着)</p>
+              <img src="../../assets/img/maven/ma-2.png" class="common-img">
+              <p>点开进去，conf文件夹里面有一个 settings.xml ，我们打开他</p>
+              <img src="../../assets/img/maven/ma-3.png" class="common-img">
+              <p>我们搜索 mirrors 关键字 ，我们把阿里的maven下载地址放上去,方便我们下载一些依赖包</p>
+              <img src="../../assets/img/maven/ma-4.png" class="common-img">
+              <div class="code">
+                <pre>
+                  <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">mirror</span><span style="color: #0000ff;">&gt;</span>  
+                    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">id</span><span style="color: #0000ff;">&gt;</span>nexus-aliyun<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">id</span><span style="color: #0000ff;">&gt;</span>  
+                    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">mirrorOf</span><span style="color: #0000ff;">&gt;</span>central<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">mirrorOf</span><span style="color: #0000ff;">&gt;</span>    
+                    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">name</span><span style="color: #0000ff;">&gt;</span>Nexus aliyun<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">name</span><span style="color: #0000ff;">&gt;</span>  
+                    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">url</span><span style="color: #0000ff;">&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">url</span><span style="color: #0000ff;">&gt;</span>  
+                  <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">mirror</span><span style="color: #0000ff;">&gt;</span> 
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+html,body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+h1,h2,h3,h4 {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.common-img {
+ width:65%;
+ min-height: 600px; 
+}
+.common-img-small{
+  width:800px;
+  height: 200px;
+}
+.span-div {
+  display: block;
+}

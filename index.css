@@ -1,0 +1,8 @@
+.directory {
+  width: 300px;
+}
+.directory-ul li {
+  color:#136ec2;
+  cursor: pointer;
+  padding-bottom: 5px;
+}

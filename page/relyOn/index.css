@@ -1,0 +1,21 @@
+.relyOn-directory {
+  width: 300px;
+}
+.relyOn-directory-ul li {
+  color:#136ec2;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+.content {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+.detail_content {
+  margin-left: 30px;
+}
+#creat {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+}
