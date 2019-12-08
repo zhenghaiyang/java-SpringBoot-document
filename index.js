@@ -9,6 +9,10 @@ window.onload = function () {
         return;
       case "idea":
         window.location.href = "page/relyOn/relyOn.html";
+        return;
+      case "mysql":
+        window.location.href="page/mysql/mysql.html";
+        return;
       case "springboot":
       default:
         return;
